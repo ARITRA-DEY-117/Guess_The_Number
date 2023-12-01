@@ -27,7 +27,7 @@ $("#submit").on("click", function () {
 
   } else {
 
-    if(Hints < 4) {
+    if(Hints < 3) {
       $("#warning").html(
         `<div class="hintButton">
           <p id="warning" class="notOkay">Oops! ${userInput} is not the correct guess !</p>
@@ -51,7 +51,7 @@ $("#submit").on("click", function () {
         );
       }
       Hints++
-      $("#hintsRemaining").text(`Hints Used : ${Hints}/4`);
+      $("#hintsRemaining").text(`Hints Used : ${Hints}/3`);
     })
     
     userInputArray.push(userInput);
