@@ -1,0 +1,126 @@
+body{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#guessText{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    font-size: 15px
+}
+
+#submit{
+    height: 35px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 10px;
+}
+
+#submit:hover{
+    background-color: chartreuse;
+    height: 40px;
+    width: 220px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#input{
+    margin: 0px 25px;
+}
+
+.resultOK{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(102, 250, 4);
+    text-align: center;
+}
+
+.newGame{
+    height: 35px;
+    width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.newGame:hover{
+    background-color: aqua;
+    height: 40px;
+    width: 260px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resultLost{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 136, 0, 0.9);
+    text-align: center;
+}
+
+.restart{
+    height: 35px;
+    width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.restart:hover{
+    background-color: aqua;
+    height: 40px;
+    width: 260px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.warning{
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    text-align: center;
+}
+
+.notOkay{
+    font-size: 30px;
+    font-weight: bold;
+    color: violet;
+    text-align: center;
+}
+
+footer{
+    color: gold;
+    font-weight: bold;
+}
+
+#gitLink{
+    border-radius: 10px;
+}
+
+#gitLink:hover{
+    border-radius: 10px;
+    background-color: black;
+    color: gold;
+    box-shadow: 0 0 35px yellow;
+}

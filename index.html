@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div id="info">
+        <h1>Guess The Number</h1>
+        <h2>The Number Guessing Game</h2>
+        <ul>
+          <li>Try and Guess the randomly generated number by Aritra between 1 to 100.</li>
+          <li>You have 10 attempts to guess the Correct Number.</li>
+        </ul>
+    </div>
+
+    <div id="gameplay">
+        <p id="guessText">Guess A Number :-</p>
+        <input id="input" type="text" placeholder="Enter A Number">
+        <button id="submit">Submit Guess</button>
+        <p id="warning"></p>
+    </div>
+   
+    <div id="track">
+        <h3 id="previousGuess">Previous Guesses : X</h3>
+        <h3 id="remainingGuess">Guesses Remaining : 10 </h3>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="./index.js"></script>
+
+  </body>
+
+  <footer>
+    BY Aritra Dey @2023
+    <a href="https://aritra-dey-117.github.io/Guess_The_Number/"><button id="gitLink">Visit Github</button></a>
+  </footer>
+
+</html>
