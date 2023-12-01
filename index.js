@@ -2,6 +2,7 @@ const randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(randomNumber);
 let userInputArray = [];
 let remainingGuess = 10;
+let Hints = 0
 $("#submit").on("click", function () {
   let userInput = Number($("#input").val());
 
@@ -26,10 +27,33 @@ $("#submit").on("click", function () {
 
   } else {
 
-    $("#warning").html(
-        `<p id="warning" class="notOkay">Oops! ${userInput} is not the correct choice!</p>`
-    );
+    if(Hints < 4) {
+      $("#warning").html(
+        `<div class="hintButton">
+          <p id="warning" class="notOkay">Oops! ${userInput} is not the correct guess !</p>
+          <button class="Hint">Hint</button>
+        </div>`
+      );
+    } else {
+      $("#warning").html(
+        `<p id="warning" class="notOkay">Oops! ${userInput} is not the correct guess !<br>You have used all of your Hints !</p>`
+      );
+    }
 
+    $('.Hint').on('click', () => {
+      if( userInput > randomNumber ) {
+        $("#warning").html(
+          `<p id="warning" class="notOkay" style="color: cyan;">Oops! The Number is Lesser Than ${userInput} !</p>`
+        );
+      } else {
+        $("#warning").html(
+          `<p id="warning" class="notOkay" style="color: cyan;">Oops! The Number is Greater Than ${userInput} !</p>`
+        );
+      }
+      Hints++
+      $("#hintsRemaining").text(`Hints Used : ${Hints}/4`);
+    })
+    
     userInputArray.push(userInput);
     remainingGuess--;
     
